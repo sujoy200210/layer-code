@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Button Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        button {
+            background-color: #0074d9;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #message {
+            font-size: 18px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Click the Button:</h1>
+    <button onclick="showMessage()">Click Me</button>
+    <p id="message"></p>
+
+    <script>
+        function showMessage() {
+            var messageElement = document.getElementById('message');
+            if (messageElement.innerHTML === '') {
+                messageElement.innerHTML = 'Message passed!';
+            } else {
+                messageElement.innerHTML = 'Error passing!';
+            }
+            var pythonScriptPath = "C:\Users\Sujoy chatterjee\AppData\Local\Programs\Python\Python311\paho\app.py";
+          // Run the Python script.
+          subprocess.run(["python", "C:\Users\Sujoy chatterjee\AppData\Local\Programs\Python\Python311\paho\app.py"]);
+        }
+    </script>
+</body>
+</html>
+
